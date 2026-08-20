@@ -202,16 +202,12 @@
 }
 
 .about__avatar {
-  width: 64px;
-  height: 64px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 1.1rem;
+  object-fit: cover;
+  border: 3px solid var(--surface-raised);
+  box-shadow: 0 0 0 1px var(--gridline), var(--shadow-sm);
   margin-bottom: 24px;
 }
 

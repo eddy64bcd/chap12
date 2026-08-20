@@ -1,4 +1,5 @@
 import { softSkills } from "../data/skills";
+import avatar from "../assets/avatar.jpg";
 
 function About() {
   return (
@@ -30,9 +31,13 @@ function About() {
         </div>
 
         <div className="about__card">
-          <div className="about__avatar" aria-hidden="true">
-            ER
-          </div>
+          <img
+            className="about__avatar"
+            src={avatar}
+            alt="Portrait d'Eddy Ramoni"
+            width="96"
+            height="96"
+          />
           <dl className="about__facts">
             <div>
               <dt>Formation</dt>

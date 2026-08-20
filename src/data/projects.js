@@ -13,7 +13,7 @@ const projects = [
     description:
       "Cadrage du parcours de formation : organisation, méthode de travail et définition d'objectifs pour la reconversion vers le développement web.",
     tech: ["Méthodologie", "Gestion de projet"],
-    repo: GITHUB_PROFILE,
+  
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projects = [
     description:
       "Réalisation d'une première page web complète en HTML et CSS, prise en main de la structure sémantique et des bases du style.",
     tech: ["HTML", "CSS"],
-    repo: GITHUB_PROFILE,
+    repo: `${GITHUB_PROFILE}/chap2`,
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projects = [
     description:
       "Intégration responsive de la page d'accueil de Booki à partir d'une maquette, avec une approche mobile-first en HTML/CSS pur.",
     tech: ["HTML", "CSS", "Responsive"],
-    repo: GITHUB_PROFILE,
+    repo: `${GITHUB_PROFILE}/chap3`,
   },
   {
     id: 4,
@@ -67,7 +67,7 @@ const projects = [
     description:
       "Cahier des charges et planification technique d'une plateforme de création de menus pour un restaurant.",
     tech: ["Planification", "Cahier des charges"],
-    repo: GITHUB_PROFILE,
+    repo: `${GITHUB_PROFILE}/chap7`,
   },
   {
     id: 8,
@@ -76,7 +76,7 @@ const projects = [
     description:
       "Application React de location entre particuliers : découpage en composants réutilisables, routing avec React Router et gestion des props.",
     tech: ["React", "React Router", "JavaScript"],
-    repo: GITHUB_PROFILE,
+     repo: `${GITHUB_PROFILE}/chap8`,
   },
   {
     id: 9,
@@ -85,7 +85,7 @@ const projects = [
     description:
       "Amélioration du référencement naturel (SEO) et de l'accessibilité d'un site vitrine pour un photographe indépendant.",
     tech: ["SEO", "Accessibilité", "Performance"],
-    repo: GITHUB_PROFILE,
+    repo: `${GITHUB_PROFILE}/chap9`,
   },
   {
     id: 10,
@@ -94,7 +94,7 @@ const projects = [
     description:
       "Correction de bugs JavaScript et CSS sur le site de l'agence 724 Events, avec mise en place de tests pour fiabiliser le code.",
     tech: ["JavaScript", "Débogage", "Tests"],
-    repo: GITHUB_PROFILE,
+    repo: `${GITHUB_PROFILE}/projet10`,
   },
   {
     id: 11,
@@ -103,7 +103,7 @@ const projects = [
     description:
       "Front-end React d'une application bancaire : authentification, appels API, gestion de l'état global avec Redux.",
     tech: ["React", "Redux", "API REST"],
-    repo: GITHUB_PROFILE,
+    repo: `${GITHUB_PROFILE}/chap11`,
   },
   {
     id: 12,
@@ -112,7 +112,7 @@ const projects = [
     description:
       "Le site que vous êtes en train de consulter : conception, développement en React et publication d'un portfolio de développeur.",
     tech: ["React", "Design", "Déploiement"],
-    repo: GITHUB_PROFILE,
+    repo: `${GITHUB_PROFILE}/chap12`,
   },
 ];
 
