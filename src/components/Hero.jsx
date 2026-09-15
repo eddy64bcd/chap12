@@ -1,10 +1,14 @@
+import Typewriter from "./Typewriter";
+
 function Hero() {
   return (
     <section id="top" className="hero">
       <div className="container hero__inner">
         <p className="eyebrow">Développeur Front-End · Reconversion professionnelle</p>
         <h1>
-          Bonjour, je suis <span className="text-accent">Eddy Ramoni</span>.
+          Bonjour, je suis
+          <br />
+          <Typewriter text="Eddy Ramoni." className="text-accent" />
         </h1>
         <p className="hero__lead">
           Après une carrière dans le commerce et le management, j'ai choisi de me

@@ -12,14 +12,16 @@ function ProjectCard({ project }) {
           <li key={t}>{t}</li>
         ))}
       </ul>
-      <a
-        className="project-card__link"
-        href={project.repo}
-        target="_blank"
-        rel="noreferrer"
-      >
-        Voir le code sur GitHub →
-      </a>
+      {project.siteUrl && (
+        <a
+          className="project-card__link"
+          href={project.siteUrl}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Voir le site en ligne →
+        </a>
+      )}
     </article>
   );
 }

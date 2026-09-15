@@ -1,9 +1,10 @@
 // Les 12 projets réalisés dans le cadre de la formation
 // "Intégrateur Web" d'OpenClassrooms.
-// Complète le champ `repo` avec le lien GitHub exact de chaque projet
-// quand tu l'auras mis en ligne (ou remplace-le simplement).
-
-const GITHUB_PROFILE = "https://github.com/eddy64bcd";
+//
+// `siteUrl` = lien vers la PAGE DU SITE mise en ligne (pas le dépôt GitHub).
+// Laisse `siteUrl: null` pour un projet qui n'a pas (ou plus) de site en
+// ligne — le bouton "Voir le site en ligne" ne s'affiche pas dans ce cas
+// (voir ProjectCard.jsx).
 
 const projects = [
   {
@@ -13,7 +14,7 @@ const projects = [
     description:
       "Cadrage du parcours de formation : organisation, méthode de travail et définition d'objectifs pour la reconversion vers le développement web.",
     tech: ["Méthodologie", "Gestion de projet"],
-  
+    siteUrl: null, // pas de site à mettre en ligne pour ce projet
   },
   {
     id: 2,
@@ -22,7 +23,7 @@ const projects = [
     description:
       "Réalisation d'une première page web complète en HTML et CSS, prise en main de la structure sémantique et des bases du style.",
     tech: ["HTML", "CSS"],
-    repo: `${GITHUB_PROFILE}/chap2`,
+    siteUrl: null, // TODO : lien vers la page en ligne
   },
   {
     id: 3,
@@ -31,7 +32,7 @@ const projects = [
     description:
       "Intégration responsive de la page d'accueil de Booki à partir d'une maquette, avec une approche mobile-first en HTML/CSS pur.",
     tech: ["HTML", "CSS", "Responsive"],
-    repo: `${GITHUB_PROFILE}/chap3`,
+    siteUrl: "https://eddy64bcd.github.io/chap3/",
   },
   {
     id: 4,
@@ -40,7 +41,7 @@ const projects = [
     description:
       "Site food-tech avec une interface mobile-first, des animations et transitions CSS, et une feuille de style organisée en Sass.",
     tech: ["HTML", "Sass", "Animations CSS"],
-    repo: `${GITHUB_PROFILE}/ohmyfood`,
+    siteUrl: "https://eddy64bcd.github.io/projet-4/",
   },
   {
     id: 5,
@@ -49,7 +50,7 @@ const projects = [
     description:
       "Développement d'un carrousel d'images en JavaScript vanilla pour le site d'une entreprise d'imprimerie.",
     tech: ["JavaScript", "DOM"],
-    repo: `${GITHUB_PROFILE}/projet-5`,
+    siteUrl: "https://eddy64bcd.github.io/projet-5/",
   },
   {
     id: 6,
@@ -58,7 +59,7 @@ const projects = [
     description:
       "Site portfolio dynamique pour un architecte, avec appel d'API, manipulation du DOM et filtrage des projets côté client.",
     tech: ["JavaScript", "API", "DOM"],
-    repo: `${GITHUB_PROFILE}/chap6`,
+    siteUrl: null, // https://eddy64bcd.github.io/chap6/ → 404 pour l'instant, à corriger
   },
   {
     id: 7,
@@ -67,7 +68,7 @@ const projects = [
     description:
       "Cahier des charges et planification technique d'une plateforme de création de menus pour un restaurant.",
     tech: ["Planification", "Cahier des charges"],
-    repo: `${GITHUB_PROFILE}/chap7`,
+    siteUrl: null, // https://eddy64bcd.github.io/chapit7/ → page blanche (titre "projet7") pour l'instant
   },
   {
     id: 8,
@@ -76,7 +77,7 @@ const projects = [
     description:
       "Application React de location entre particuliers : découpage en composants réutilisables, routing avec React Router et gestion des props.",
     tech: ["React", "React Router", "JavaScript"],
-     repo: `${GITHUB_PROFILE}/chap8`,
+    siteUrl: null, // TODO : lien vers la page en ligne (chap8 pointe en fait vers le projet 9, voir ci-dessous)
   },
   {
     id: 9,
@@ -85,7 +86,7 @@ const projects = [
     description:
       "Amélioration du référencement naturel (SEO) et de l'accessibilité d'un site vitrine pour un photographe indépendant.",
     tech: ["SEO", "Accessibilité", "Performance"],
-    repo: `${GITHUB_PROFILE}/chap9`,
+    siteUrl: "https://eddy64bcd.github.io/chap8/", // vérifié : affiche bien le site Nina Carducci (photographe)
   },
   {
     id: 10,
@@ -94,7 +95,7 @@ const projects = [
     description:
       "Correction de bugs JavaScript et CSS sur le site de l'agence 724 Events, avec mise en place de tests pour fiabiliser le code.",
     tech: ["JavaScript", "Débogage", "Tests"],
-    repo: `${GITHUB_PROFILE}/projet10`,
+    siteUrl: null, // https://eddy64bcd.github.io/projet10/ → page blanche (titre "testreact") pour l'instant
   },
   {
     id: 11,
@@ -103,7 +104,7 @@ const projects = [
     description:
       "Front-end React d'une application bancaire : authentification, appels API, gestion de l'état global avec Redux.",
     tech: ["React", "Redux", "API REST"],
-    repo: `${GITHUB_PROFILE}/chap11`,
+    siteUrl: null, // TODO : lien vers la page en ligne
   },
   {
     id: 12,
@@ -112,7 +113,7 @@ const projects = [
     description:
       "Le site que vous êtes en train de consulter : conception, développement en React et publication d'un portfolio de développeur.",
     tech: ["React", "Design", "Déploiement"],
-    repo: `${GITHUB_PROFILE}/chap12`,
+    siteUrl: null, // pourra pointer vers ce portfolio lui-même une fois en ligne
   },
 ];
 
