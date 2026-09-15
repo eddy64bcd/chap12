@@ -508,6 +508,12 @@
   border-radius: 999px;
 }
 
+.project-card__links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
 .project-card__link {
   font-size: 0.88rem;
   font-weight: 600;
@@ -516,6 +522,14 @@
 
 .project-card__link:hover {
   color: var(--accent-dark);
+}
+
+.project-card__link--code {
+  color: var(--text-secondary);
+}
+
+.project-card__link--code:hover {
+  color: var(--text-primary);
 }
 
 /* ---------- contact ---------- */
